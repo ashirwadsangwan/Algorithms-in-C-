@@ -46,8 +46,9 @@ The following code declares a variable called `varName` that has in it a value o
 int varName = 100;
 ```
 In C++ the results of running this code will look like the diagram below:
-
-<center><img src="https://runestone.academy/runestone/static/cppds/_images/cpp_var.png"></center>
+<p align="center">
+    <img src="https://runestone.academy/runestone/static/cppds/_images/cpp_var.png">
+</p>
 When we want to output the value to the console, we use the variable name to do so.
 
 But, we can also identify the memory location of the variable, which is sometimes very valuable. This address may change each time the program is run. In C++, this will always look odd because it will be the actual memory address written in a hexadecimal code which is a base 16 code like
@@ -87,7 +88,9 @@ int varName = 100;
 int *varPntr;
 varPntr = &varName;
 ```
-<center><img src = "https://runestone.academy/runestone/static/cppds/_images/point2.png"></center>
+<p align="center>
+<img src = "https://runestone.academy/runestone/static/cppds/_images/point2.png">
+</p>
 
 #### NUll Pointer
 The NULL pointer in C++ points to nothing and is often denoted by the keyword NULL (all caps) or by 0. The NULL pointer is often used in conditions and/or in logical operations.
