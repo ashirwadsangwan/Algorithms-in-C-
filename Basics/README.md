@@ -92,7 +92,7 @@ varPntr = &varName;
 <img src = "https://runestone.academy/runestone/static/cppds/_images/point2.png">
 </p>
 
-#### NUll Pointer
+#### Null Pointer
 The NULL pointer in C++ points to nothing and is often denoted by the keyword NULL (all caps) or by 0. The NULL pointer is often used in conditions and/or in logical operations.
 
 The following example demonstrates how the NULL pointer works. The variable ptrx initially has the address of x when it is declared. On the first iteration of the loop, it is assigned the value of NULL (i.e. 0) thereby ending the loop:
