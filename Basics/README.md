@@ -88,7 +88,7 @@ int varName = 100;
 int *varPntr;
 varPntr = &varName;
 ```
-<p align="center>
+<p align="center">
 <img src = "https://runestone.academy/runestone/static/cppds/_images/point2.png">
 </p>
 
