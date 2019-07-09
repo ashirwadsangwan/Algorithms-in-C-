@@ -1,26 +1,35 @@
 #include <iostream>
-#include <vector>
+#include <cmath>
 using namespace std;
 
-int isPrime(int num){
-    bool flag=true;
-    for (int i=2; i<num/2; i++){
-        if (num%i == 0){
-            flag = false;
-            break;
-        }
-    }
-    return flag;
-}
+bool isPrime(int n) 
+{ 
+    // Corner cases 
+    if (n <= 1) 
+        return false; 
+    if (n <= 3) 
+        return true; 
+  
+    // This is checked so that we can skip 
+    // middle five numbers in below loop 
+    if (n % 2 == 0 || n % 3 == 0) 
+        return false; 
+  
+    for (int i = 5; i * i <= n; i = i + 6) 
+        if (n % i == 0 || n % (i + 2) == 0) 
+            return false; 
+  
+    return true; 
+} 
 
-void primeList(int n){
-    std::vector<int> primes;
+int main(){
+    int n;
+    cin >> n;
     for (int i=0; i < n; i++){
-        if (isPrime(i)==1){
-            primes.push_back(i);
-        }
-    }
-    
+       if (isPrime(i)==1){
+           cout << i << " ";
+       }
+   }
 }
 
 
